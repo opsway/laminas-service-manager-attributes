@@ -1,0 +1,1 @@
+# laminas-service-manager-attributes

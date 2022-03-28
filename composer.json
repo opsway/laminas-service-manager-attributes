@@ -1,0 +1,30 @@
+{
+    "name": "opsway/laminas-service-manager-attributes",
+    "description": "Laminas service manager attributes based config builder",
+    "type": "library",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "OpsWay",
+            "email": "support@opsway.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laminas/laminas-servicemanager": "^3.6"
+    },
+    "require-dev": {
+        "opsway/psr12-strict-coding-standard": "^0.7",
+        "vimeo/psalm": "^4.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpsWay\\Laminas\\ServiceManager\\Attributes\\": "src/"
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf"
+    }
+}

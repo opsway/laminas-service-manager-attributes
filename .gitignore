@@ -2,3 +2,4 @@
 /.idea/
 /data/
 .phpcs-cache
+.phpunit.result.cache

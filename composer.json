@@ -16,6 +16,8 @@
     },
     "require-dev": {
         "opsway/psr12-strict-coding-standard": "^0.7",
+        "phpunit/phpunit": "^9.5",
+        "psalm/plugin-phpunit": "^0.16.0",
         "vimeo/psalm": "^4.22"
     },
     "autoload": {
@@ -23,8 +25,17 @@
             "OpsWay\\Laminas\\ServiceManager\\Attributes\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "OpsWay\\Tests\\": "tests/"
+        }
+    },
     "scripts": {
         "cs-check": "phpcs",
         "cs-fix": "phpcbf"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
     }
 }
